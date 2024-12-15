@@ -1,0 +1,12 @@
+
+<div class="row">
+<main class="todo-container">
+  
+  <div class="add-task">
+      <input type="text" [(ngModel)]="newTask">
+      <button (click)=addTask(newTask)>Add</button>
+  </div>
+
+  <app-child [tasks] = "todoList"></app-child>
+</main>
+</div>
